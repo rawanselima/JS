@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #263a29;
+  --second-color: #fff8d6;
+  --third-color: #ccd6a6;
+  --btn-color: #9dc08b;
+}
+
+input:focus {
+  outline: none;
+  background-color: #ccd6a6 !important;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.container {
+  width: 100%;
+}
+
+.container .data {
+  width: 890px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.container .data .head {
+  color: var(--second-color);
+  padding: 10px;
+}
+
+.container .data .price input,
+.container .data .price p,
+.container .data .count input,
+.container .data .count button,
+.container .data .search #search,
+.container .data .search button,
+.update button,
+.delete button {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--second-color);
+  padding: 5px 7px;
+  margin: 5px;
+}
+
+.container .data .price p,
+.container .data .search button {
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--btn-color);
+}
+
+.container .data .price p {
+  display: inline-block;
+  height: 25px;
+}
+
+.container .data .price #title,
+.container .data .count #count,
+.container .data .count #category,
+.container .data .count button,
+.container .data .search #search {
+  width: 100%;
+}
+
+.container .data .price input:not(:first-child) {
+  width: 163px;
+}
+
+.container .data .count button,
+.update button,
+.delete button {
+  background-color: var(--btn-color);
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.container .data .count button:hover,
+.container .data .search button:hover,
+.update button:hover,
+.delete button:hover {
+  background-color: #86a576;
+  letter-spacing: 1px;
+}
+
+.container .data .search button {
+  width: 48%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.table-data {
+  text-align: center;
+  width: 100%;
+}
+
+.container .data table {
+  color: var(--second-color);
+  margin: 15px;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  font-size: 18px;
+}
+
+th,
+td {
+  padding: 5px;
+}

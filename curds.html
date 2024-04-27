@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="curds.css" />
+    <title>CURDS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="data">
+        <div class="head">
+          <h1>CURDS</h1>
+          <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+        <div class="price">
+          <input id="title" type="text" placeholder="title" />
+          <input onkeyup="total()" id="price" type="number" placeholder="price" />
+          <input onkeyup="total()" id="tax" type="number" placeholder="taxes" />
+          <input onkeyup="total()" id="ads" type="number" placeholder="ads" />
+          <input onkeyup="total()" id="discount" type="number" placeholder="discount" />
+          <p id="total"> </p>
+        </div>
+        <div class="count">
+          <input id="count" type="number" placeholder="count" />
+          <input id="category" type="text" placeholder="category" />
+          <button id="create">CREATE</button>
+        </div>
+        <div class="search">
+          <input id="search" type="text" placeholder="search" />
+          <button id="searchtitle">SEARCH BY TITLE</button>
+          <button id="searchcategory">SEARCH BY CATEGORY</button>
+        </div>
+        <div class="table-data">
+          <table>
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>TITLE</th>
+              <th>PRICE</th>
+              <th>ADS</th>
+              <th>DISCOUNT</th>
+              <th>TOTAL</th>
+              <th>CATEGORY</th>
+              <th>UPDATE</th>
+              <th>DELETE</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          </table>
+        </tbody>
+        </div>
+      </div>
+    </div>
+    <script src="curds.js"></script>
+  </body>
+</html>
